@@ -6,21 +6,30 @@
   <title>Word Guessing Game</title>
   <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
   <form>
-    <h1>Guess:</h1>
-    <input type="text" name="guess">
-    <input type="submit" value="Submit">
+    <h1>Guess A Letter:</h1>
+    <input type="text" name="guess"  maxlength="1">
+    <input type="submit" value="Submit" id="submit">
   </form>
-  <button id="restart">Restart</button>
+  <button id="restart" class="hidden">Restart</button>
   <div id="buttonBar">
+    <div id='partial'>partial answer</div>
     <h3>Number of Guesses</h3>
     <div id='tries'>tries</div>
     <h3>Already Tried</h3>
     <div id='prev-tries'>prev-tries</div>
     <div id='result'>result</div>
+    <h2>Hint:</h2>
+    <p>You want a hint? Ok, I'll give you one. (*flicks cigarette to the ground*) It's apt this game is called Hangman, you know. Each day we merely stare
+      into the void deluding ourselves that our decisions mean something. We live in a universe of emptiness and dust,
+      and our whole existence is predicated on denying that emptiness until we, and everyone and everything we ever loved, become
+      part of it. Our true nature is oblivion. We are all Dorian Gray but our portraits are on obscene display for
+      all to see. This is a fun game for the whole family. Please be sure to only guess one letter at a time :)</p>
   </div>
-    <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
