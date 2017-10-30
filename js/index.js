@@ -30,6 +30,7 @@ function startGame() {
     for (let i = 0; i < answerWord.length; i++) {
       partialAnswer += '_';
     }
+    partialDiv.textContent = partialAnswer;
     let fullDefApi = defApi1 + answerWord + defApi2;
     fetch(fullDefApi).then(resp => resp.json()).then(function(data) {
       defDiv.textContent = data[0].text;

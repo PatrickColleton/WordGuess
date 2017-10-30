@@ -8,6 +8,7 @@
 </head>
 
 <body>
+  <h1>Hangman Powered by Wordnik.com API</h1>
   <form>
     <h2>Guess A Letter:</h2>
     <input type="text" name="guess" maxlength="1" autocomplete="off">
@@ -16,7 +17,7 @@
   <button id="restart" class="hidden">Restart</button>
   <div id="buttonBar">
     <div id='partial'>partial answer</div>
-    <h3>Number of Guesses</h3>
+    <h3 id='num-guesses'>Number of Guesses: </h3>
     <div id='tries'>tries</div>
     <h3>Already Tried</h3>
     <div id='prev-tries'>prev-tries</div>
