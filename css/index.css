@@ -1,5 +1,6 @@
 body{
-  background-color: blue;
+  /*background-color: blue;*/
+  background: linear-gradient(60deg, blue, red);
   text-align: center;
 }
 
@@ -28,4 +29,8 @@ form{
 
 #tries, #num-guesses{
   display: inline;
+}
+
+#prev-tries{
+  font-family: cursive;
 }
