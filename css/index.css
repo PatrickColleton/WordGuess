@@ -10,3 +10,8 @@ form{
 .hidden{
   visibility: hidden;
 }
+
+#partial{
+  letter-spacing: 25px;
+  font-size: 25px;
+}
